@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #222;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  color: #2e2e2e;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Quote Display Box */
+.quote-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #222;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  min-height: 100px;
+}
+
+/* Highlighted word */
+.highlight {
+  background: #d6ebff;
+  color: #0078ff;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Message */
+.message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  margin-top: 15px;
+  min-height: 50px;
+}
+
+/* Typing Input Box */
+#typed-value {
+  width: 80%;
+  margin-top: 25px;
+  padding: 12px 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#typed-value:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 10px rgba(0, 120, 255, 0.3);
+}
+
+/* Error input */
+.error {
+  border-color: #ff3b3b !important;
+  background: #ffe6e6;
+  animation: shake 0.2s ease-in-out 2;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 30px;
+}
+
+button {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0057b8, #0095ff);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 120, 255, 0.4);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #333;
+  background: #ffffff66;
+  backdrop-filter: blur(5px);
+}
+
+footer span {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  .quote-box {
+    font-size: 1.1rem;
+    padding: 15px 20px;
+  }
+
+  #typed-value {
+    width: 95%;
+  }
+}

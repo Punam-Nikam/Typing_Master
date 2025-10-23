@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Practice Game</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>⌨️ Typing Speed Practice</h1>
+      <p class="subtitle">
+        Click <b>Start</b> to begin typing. Type each sentence as fast and accurately as you can!
+      </p>
+
+      <div id="quote" class="quote-box"></div>
+      <p id="message" class="message"></p>
+
+      <input type="text" id="typed-value" aria-label="current word" placeholder="Start typing here..." />
+
+      <div class="button-group">
+        <button id="start" type="button">Start</button>
+        <button id="end" type="button" disabled>End</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>💻 Typing Practice App — <span>by Punam</span></p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
